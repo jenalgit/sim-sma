@@ -15,7 +15,7 @@ namespace Models;
 
 use Resources;
 
-class Dict {
+class Siswa {
 
     private $db;
 

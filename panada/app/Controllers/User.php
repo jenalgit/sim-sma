@@ -5,7 +5,7 @@ namespace Controllers;
 use Resources,
     Models;
 
-class Home extends Resources\Controller {
+class User extends Resources\Controller {
 
     private $db,$data;
 
@@ -14,7 +14,7 @@ class Home extends Resources\Controller {
         $this->db = new Models\Siswa();
         $this->request = new Resources\Request;
         $this->data['baseurl']= $this->uri->baseUri;
-        $this->data['title']= 'Welcome';
+        $this->data['title']= 'Management User';
     }
 
     public function index() {
