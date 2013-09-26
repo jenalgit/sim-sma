@@ -1,12 +1,6 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of dict
+ * Description of User
  *
  * @author jenal<warungkopidigital.blogspot.com>
  */
@@ -44,8 +38,7 @@ class User {
     }
 
     public function delete($id) {
-        $query = "DELETE FROM user WHERE id='" . $id . "'";
-        return $this->db->results($query);
+        return $this->db->delete('user', array('username' => $id)); 
     }
 
     public function update($field, $username) {
